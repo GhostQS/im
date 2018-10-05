@@ -1,0 +1,56 @@
+/*
+Theme Name: Algebra Lab
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Algebra Lab
+Version: 1.0.0
+Text Domain:  algebra-lab
+*/
+
+.ch-btn{
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.commentlist div.avatar{
+  padding:1rem;
+  background: #c40f61!important;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.rw-ui-info-inner-container{
+  display: none!important;
+}
+
+
+.ihc-ap-theme-3 .ihc-ap-menu .ihc-ap-menu-item .fa-ihc{
+  color: white
+}
+
+.idea-title{
+  color: white
+}
+.ihc-ap-menu-item a {
+  color: white!important;
+}
+
+
+
+
+.comments-list-author-li {
+  border-bottom:  1px solid #aaa!important;
+  padding:1rem 0!important;
+  margin-bottom: 2rem!important;
+  display: block!important;
+  list-style-type: none;
+}
