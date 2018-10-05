@@ -89,7 +89,7 @@
 							</div>
 							<div class="iump-form-line iump-no-border">
 									<input type="checkbox" onClick="check_and_h(this, '#ihc_login_pass_lost');ihc_login_preview();" <?php if($meta_arr['ihc_login_pass_lost']==1) echo 'checked';?>/>
-									<span style="color: #21759b; font-weight:bold;"><?php _e('Lost your password', 'ihc');?></span>
+									<span style="color: #21759b; font-weight:bold;"><?php _e('Izgubili ste lozinku', 'ihc');?></span>
 									<input type="hidden" name="ihc_login_pass_lost" value="<?php echo $meta_arr['ihc_login_pass_lost'];?>" id="ihc_login_pass_lost"/>
 							</div>
 							<div class="iump-form-line iump-no-border">
