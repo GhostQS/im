@@ -23,6 +23,10 @@ $rok = get_field('rok', false, false);
 $rok = new DateTime($rok);
 $rok = $rok->format('dmY');
 
+
+
+
+
 if($date_now >= $rok){
 
 	echo "<style>#respond{display: none}</style>";

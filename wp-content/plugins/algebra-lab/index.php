@@ -170,5 +170,16 @@ function wpb_show_current_user_attachments( $query ) {
 }
 
 
+//enable admin or evaluator to comment and review ideas (nested threads)
+function enable_threaded_comments(){
+if (is_admin()) {
+     if (is_singular() && comments_open() && (get_option('thread_comments') == 1))
+          wp_enqueue_script('comment-reply');
+     }
+}
+
+add_action('get_header', 'enable_threaded_comments');
+
+
 
  ?>

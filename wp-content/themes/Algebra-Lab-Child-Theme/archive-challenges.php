@@ -20,8 +20,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 			</div>
 		</div>
 	<?php endif; ?>
-
-	<?php get_template_part( 'templates/blog', 'layout' ); ?>
+	<div class="flex-search">
+		<div>
+			<?php echo do_shortcode('[wpdreams_ajaxsearchpro id=1]'); ?>
+		</div>
+	</div>
+		<?php get_template_part( 'templates/blog', 'layout' ); ?>
 </section>
 <?php do_action( 'avada_after_content' ); ?>
 <?php
