@@ -4459,12 +4459,12 @@ msgstr "Datum i vrijeme"
 #. translators: %s: post link
 #: wp-admin/edit-form-comment.php:126
 msgid "In response to: %s"
-msgstr "Kao odgovor na: %s"
+msgstr "Izazov: %s"
 
 #. translators: %s: comment link
 #: wp-admin/edit-form-comment.php:141
 msgid "In reply to: %s"
-msgstr "Kao odgovor na: %s"
+msgstr "Izazov: %s"
 
 #: wp-admin/revision.php:120
 msgid ""

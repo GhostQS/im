@@ -14,6 +14,48 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 
+function current_author(){
+	global $current_user;
+	get_currentuserinfo();
+	if(is_user_logged_in()) {
+	if($current_user->display_name == get_comment_author()) {
+	// your code here
+	$moja_ideja = "rgba(150, 196, 88, 0.1)";
+	return $moja_ideja;
+	} else {
+	// your code here
+	$moja_ideja1 = "transparent";
+	return $moja_ideja1;
+
+	}
+
+}
+}
+
+function my_idea(){
+
+
+	global $current_user;
+	get_currentuserinfo();
+	if(is_user_logged_in()) {
+	if($current_user->display_name == get_comment_author()) {
+	// your code here
+	$moja_ideja2 = "<span>Moja</span>";
+	return $moja_ideja2;
+	} else {
+	// your code here
+	$moja_ideja3 = "";
+	return $moja_ideja3;
+
+	}
+
+}
+
+
+
+
+}
+
 /**
  * Template handler.
  */
@@ -458,16 +500,16 @@ class Avada_Template {
 	public function comment_template( $comment, $args, $depth ) {
 		?>
 		<?php $add_below = ''; ?>
-		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>">
+		<li <?php comment_class(); ?> id="comment-<?php comment_ID(); ?>"  style="background-color:<?php echo  current_author(); ?>">
 			<div class="the-comment">
-				<div class="avatar"><div class="ime-i-prezime"><i class="far fa-lightbulb"></i>
+				<div class="avatar"><div class="ime-i-prezime"><i class="far fa-lightbulb"></i><?php echo my_idea(); ?>
 </div></div>
 				<div class="comment-box">
 					<div class="comment-author meta">
 						<strong><?php //current user admin show the ideas author
 						$current_user = wp_get_current_user();
 						if (user_can( $current_user, 'administrator' )) {
-							echo get_comment_author_link(); } ?></strong>
+							echo "Korisnik:  " . get_comment_author_link(); } ?></strong>
 
 						<?php /* translators: %1$s: Comment date. %2$s: Comment time. */ ?>
 						<?php printf( esc_attr__( '%1$s at %2$s', 'Avada' ), get_comment_date(), get_comment_time() ); // WPCS: XSS ok. ?>
@@ -518,6 +560,7 @@ class Avada_Template {
 </ul>
 <?php } ?>
 <strong>Opis ideje: </strong>
+
 						<?php comment_text(); ?>
 
 
@@ -526,6 +569,7 @@ class Avada_Template {
 			</div>
 		<?php
 	}
+
 
 	/**
 	 * The password protected form template.

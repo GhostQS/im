@@ -3,25 +3,25 @@ msgstr ""
 "Project-Id-Version: Advanced Custom Fields\n"
 "Report-Msgid-Bugs-To: http://support.advancedcustomfields.com\n"
 "POT-Creation-Date: 2018-02-06 10:08+1000\n"
-"PO-Revision-Date: 2018-05-05 14:02+0700\n"
-"Last-Translator: \n"
-"Language-Team: Elliot Condon <e@elliotcondon.com>\n"
+"PO-Revision-Date: 2018-10-10 11:29+0000\n"
+"Last-Translator: bagatic <boris.agatic0@gmail.com>\n"
+"Language-Team: Croatian (Croatia)\n"
 "Language: hr_HR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.7\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: acf.php\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPath-1: acf-pro-hr/acf.pot\n"
-"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SearchPathExcluded-0: *.js"
 
 #: acf.php:67
 msgid "Advanced Custom Fields"
@@ -1095,8 +1095,8 @@ msgstr ""
 #, php-format
 msgid ""
 "We also wrote an <a href=\"%s\">upgrade guide</a> to answer any questions, "
-"but if you do have one, please contact our support team via the <a href=\"%s"
-"\">help desk</a>"
+"but if you do have one, please contact our support team via the <a "
+"href=\"%s\">help desk</a>"
 msgstr ""
 "Provjeriti <a href=“%s”>upute za ažuriranje</a> ako imate dodatnih pitanja, "
 "ili kontaktirajte našu <a href=“%s”>tim za podršku</a>"
@@ -2904,8 +2904,8 @@ msgstr "Informacije o licenci"
 #, php-format
 msgid ""
 "To unlock updates, please enter your license key below. If you don't have a "
-"licence key, please see <a href=\"%s\" target=\"_blank\">details & pricing</"
-"a>."
+"licence key, please see <a href=\"%s\" target=\"_blank\">details & "
+"pricing</a>."
 msgstr ""
 "Da bi omogućili ažuriranje, molimo unesite vašu licencu i polje ispod. "
 "Ukoliko ne posjedujete licencu, molimo posjetite <a href=“%s” "
@@ -3008,7 +3008,7 @@ msgstr "Sva polje iz %s skupa polja"
 #: pro/fields/class-acf-field-repeater.php:174
 #: pro/fields/class-acf-field-repeater.php:470
 msgid "Add Row"
-msgstr "Dodaj red"
+msgstr "Učitaj dokument"
 
 #: pro/fields/class-acf-field-flexible-content.php:34
 msgid "layout"
@@ -3191,7 +3191,7 @@ msgstr "Maksimalni broj redova je već odabran ({max})"
 
 #: pro/fields/class-acf-field-repeater.php:343
 msgid "Add row"
-msgstr "Dodaj red"
+msgstr "Učitaj dokument"
 
 #: pro/fields/class-acf-field-repeater.php:344
 msgid "Remove row"
@@ -3228,13 +3228,13 @@ msgstr "Postavke spremljene"
 #: pro/updates.php:97
 #, php-format
 msgid ""
-"To enable updates, please enter your license key on the <a href=\"%s"
-"\">Updates</a> page. If you don't have a licence key, please see <a href=\"%s"
-"\">details & pricing</a>."
+"To enable updates, please enter your license key on the <a href=\"%s\">"
+"Updates</a> page. If you don't have a licence key, please see <a href=\"%s\">"
+"details & pricing</a>."
 msgstr ""
 "Da bi omogućili automatsko ažuriranje, molimo unesite licencu na stranici <a "
-"href=“%s”>ažuriranja</a>. Ukoliko nemate licencu, pogledajte <a "
-"href=“%s”>opcije i cijene</a>."
+"href=“%s”>ažuriranja</a>. Ukoliko nemate licencu, pogledajte <a href=“%s”>"
+"opcije i cijene</a>."
 
 #. Plugin URI of the plugin/theme
 msgid "https://www.advancedcustomfields.com/"
@@ -3247,47 +3247,3 @@ msgstr "Elliot Condon"
 #. Author URI of the plugin/theme
 msgid "http://www.elliotcondon.com/"
 msgstr "http://www.elliotcondon.com/"
-
-#~ msgid "Getting Started"
-#~ msgstr "Kako početi"
-
-#~ msgid "Field Types"
-#~ msgstr "Tipovi polja"
-
-#~ msgid "Functions"
-#~ msgstr "Funkcije"
-
-#~ msgid "Actions"
-#~ msgstr "Akcije"
-
-#~ msgid "Features"
-#~ msgstr "Mogućnosti"
-
-#~ msgid "How to"
-#~ msgstr "Pomoć"
-
-#~ msgid "Tutorials"
-#~ msgstr "Tutorijali"
-
-#~ msgid "FAQ"
-#~ msgstr "Česta pitanja"
-
-#~ msgid "Error"
-#~ msgstr "Greška"
-
-#~ msgid "Export Field Groups to PHP"
-#~ msgstr "Izvoz polja u PHP obliku"
-
-#~ msgid "Download export file"
-#~ msgstr "Preuzmi datoteku"
-
-#~ msgid "Generate export code"
-#~ msgstr "Stvori kod za izvoz"
-
-#~ msgid "Import"
-#~ msgstr "Uvoz"
-
-#~ msgid "Term meta upgrade not possible (termmeta table does not exist)"
-#~ msgstr ""
-#~ "Nije moguće dovrišti nadogradnju tablice 'termmeta', tablica ne postoji u "
-#~ "bazi"

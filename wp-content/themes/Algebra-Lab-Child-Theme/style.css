@@ -52,7 +52,7 @@ Text Domain:  algebra-lab
 }
 
 .flex-search{
-  
+
   margin:2rem auto;
 }
 
@@ -62,4 +62,13 @@ Text Domain:  algebra-lab
   margin-bottom: 2rem!important;
   display: block!important;
   list-style-type: none;
+}
+
+.the-comment .avatar{
+  width: 90px!important;
+}
+
+.comment-box{
+  padding: 40px;
+
 }

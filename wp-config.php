@@ -77,7 +77,7 @@ $table_prefix  = 'alwpdb_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+define('WP_DEBUG', true);
 
 /* To je sve, ne morate više ništa mijenjati! Sretno bloganje. */
 

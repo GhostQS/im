@@ -14,6 +14,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 
+
+function get_me_the_current_idea_author(){
+	if( is_user_logged_in() && is_author(get_current_user_id()) ) {
+			$my_idea = "Moja ideja";
+			return $my_idea;
+	} else {
+		$not_my = "nije moja ideja";
+		return $not_my;
+	}
+}
+
 /**
  * Template handler.
  */
@@ -466,8 +477,8 @@ class Avada_Template {
 					<div class="comment-author meta">
 						<strong><?php //current user admin show the ideas author
 						$current_user = wp_get_current_user();
-						if (user_can( $current_user, 'administrator' )) {
-							echo get_comment_author_link(); } ?></strong>
+						if (is_author()) {
+							echo "Korisnik: " . get_comment_author_link(); } ?></strong>
 
 						<?php /* translators: %1$s: Comment date. %2$s: Comment time. */ ?>
 						<?php printf( esc_attr__( '%1$s at %2$s', 'Avada' ), get_comment_date(), get_comment_time() ); // WPCS: XSS ok. ?>

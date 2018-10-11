@@ -28,6 +28,7 @@ do_action( 'avada_before_comments' );
 <?php if ( have_comments() ) : ?>
 
 	<div id="comments" class="comments-container">
+			<h2>Pogledaj što su drugi predložili</h2>
 		<?php ob_start(); ?>
 		<?php comments_number( esc_html__( 'Nema prijavljenih ideja', 'algebra-lab' ), esc_html__( 'Jedna ideja', 'algebra-lab' ), esc_html( _n( '% ideja', '% ideje', get_comments_number(), 'algebra-lab' ) ) ); ?>
 		<?php Avada()->template->title_template( ob_get_clean(), $title_size ); ?>
@@ -37,6 +38,7 @@ do_action( 'avada_before_comments' );
 		<?php endif; ?>
 
 		<ol class="comment-list commentlist">
+
 			<?php wp_list_comments( 'callback=avada_comment' ); ?>
 		</ol><!-- .comment-list -->
 
@@ -70,8 +72,8 @@ do_action( 'avada_before_comments' );
 	$comments_args = array(
 		'fields'               => apply_filters( 'comment_form_default_fields', $fields ),
 		'comment_field'        => '<div id="comment-textarea"><label class="screen-reader-text" for="comment">' . esc_attr__( 'Comment', 'Avada' ) . '</label><textarea name="comment" id="comment" cols="45" rows="8" aria-required="true" required="required" tabindex="0" class="textarea-comment" placeholder="' . esc_html__( 'Unesite kratki opis vaše ideje...', 'Avada' ) . '"></textarea></div>',
-		'title_reply'          => esc_html__( 'Prijavite ideju', 'Avada' ),
-		'title_reply_to'       => esc_html__( 'Prijavite ideju', 'Avada' ),
+		'title_reply'          => esc_html__( 'Prijavite svoju ideju', 'Avada' ),
+		'title_reply_to'       => esc_html__( 'Prijavite svoju ideju', 'Avada' ),
 		'title_reply_before'   => '<h' . $title_size . ' id="reply-title" class="comment-reply-title">',
 		'title_reply_after'    => '</h' . $title_size . '>',
 		/* translators: Opening and closing link tags. */

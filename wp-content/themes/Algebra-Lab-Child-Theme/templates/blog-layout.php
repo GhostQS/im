@@ -405,7 +405,16 @@ if ( is_search() && Avada()->settings->get( 'search_results_per_page' ) ) {
 	<?php endif; ?>
 	<?php if ( 'timeline' === $blog_layout ) : ?>
 	</div>
-	<?php endif; ?>
+	<?php endif;
+
+	if ( !have_posts() )
+        {
+          echo "<div style='height:50vh;margin:auto'><h2 style='color:white'>Trenutno nema prijavljenih izazova</h2></div>";
+        }
+				?>
+
+
+
 <?php // Get the pagination. ?>
 <?php echo fusion_pagination( '', apply_filters( 'fusion_pagination_size', 1 ) ); // WPCS: XSS ok. ?>
 </div>

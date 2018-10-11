@@ -11,6 +11,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit( 'Direct script access denied.' );
 }
 
+
+//status colorhints
+function color_change(){
+
+	$the_status = get_field('status');
+	if ($the_status == 'otvoren'){
+		return "green";
+	}
+	elseif ($the_status == 'u najavi'){
+		return "blue";
+	}
+	elseif($the_status == 'zatvoren') {return "red";}
+	}
+
 /**
  * Returns an instance of the Fusion class.
  *
@@ -215,13 +229,14 @@ if ( ! function_exists( 'fusion_render_post_metadata' ) ) {
 
 
 
-
-
-
 				// $metadata .= '<span class="fusion-comments"> | ' . $comments . '</span>';
-				$metadata .= '<span class="fusion-comments">Status: '. get_field('status').'</span>';
+
+				$metadata .= '<span class="fusion-comments" style="color:' . color_change() . '">Status: '. get_field('status').'</span>';
 				$metadata .= '<span class="fusion-comments"> | Rok: ' . get_field('rok') . '</span>';
-				$metadata .= '<span class="fusion-comments"> | Rok za evaluaciju: ' . get_field('rok') . '</span>';
+				if(is_admin()):
+				$metadata .= '<span class="fusion-comments"> | Rok za evaluaciju: ' . get_field('rok_za_evaluaciju') . '</span>';
+				$metadata .= '<span class="fusion-comments"> | Rok za bootcamp: ' . get_field('rok_za_kraj_bootcampa') . '</span>';
+				endif;
 				if( get_field('nagrada') ):
 				$metadata .= '<span class="fusion-comments"> | Nagrada: ' . get_field('nagrada') . '</span>';
 				endif;
